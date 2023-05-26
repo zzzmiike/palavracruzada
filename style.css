@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.cruzadinha{
+    background-color: black;
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(25, 4fr);
+    grid-template-rows: repeat(20, 4fr);
+    padding: 5px;
+    gap: 5px;
+}
+
+.containerPerguntas{
+    width: 30%;
+    height: 100%;
+}
+
+.letterContainer{
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.containerLetter{
+    background-color: aliceblue;
+}
