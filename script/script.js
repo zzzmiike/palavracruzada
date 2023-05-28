@@ -107,13 +107,8 @@ function comparar() {}
 var escrito = "";
 var linha = "";
 
-var perguntaAleatoria = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17] 
-var numeroAleatorio
-var contadorAleatorio = 18
-
 function exibirQuadro() {
   for (var i = 0; i < respostas.length; i++) {
-    numeroAleatorio = parseInt(Math.random()* contadorAleatorio)
     boxQuestoes.innerHTML += `
         <div class="question" style = "transform: translateY(${valorTransform}rem);">
         <summary id="sum${i}" class="containeroNumQuestao">
@@ -121,12 +116,12 @@ function exibirQuadro() {
         </summary>
         <div class="detQuest">
             <p>
-            ${respostas[numeroAleatorio].pergunta}
+            ${respostas[i].pergunta}
             </p>
             
             <input
                 type="text"
-                id="${numeroAleatorio}"
+                id="${i}"
                 class="iptQuestion"
                 onkeyup="verificar(this.id)"
                 placeholder="Insira aqui a respostas"
@@ -136,19 +131,6 @@ function exibirQuadro() {
         </div>
     </div>
             `;
-           
-            if(perguntaAleatoria.indexOf(numeroAleatorio) >= 0){      
-              perguntaAleatoria.splice(numeroAleatorio, 1)
-              contadorAleatorio--
-            } else{    
-             for(j =0; perguntaAleatoria.indexOf(numeroAleatorio) >= 0; j++){       
-                numeroAleatorio = parseInt(Math.random()* 18)
-             }
-             perguntaAleatoria.splice(numeroAleatorio, 1)
-             contadorAleatorio--
-            }
-            
-  
   }
 
   boxQuestoes.innerHTML += `
@@ -190,8 +172,9 @@ var j = 0;
 
 function verificar(id) {
   var resposta = "";
+
   for (var i = 0; i < respostas.length; i++) {
-    j = id
+    j = i
     var idInput = document.getElementById(`${j}`);
     resposta = idInput.value;
     if (resposta == respostas[j].resposta && id == respostas[i].id) {
@@ -205,15 +188,16 @@ function verificar(id) {
         elementoAtual.style.transform = `translateY(${valorTransform}rem)`;
       });
 
+      idInput.value = ""
+      idInput.setAttribute("disabled", "")
       return;
+
     }
   }
 }
 
 function verResposta() {
   j++;
-
-  valorTransform -= 30;
 }
 
 var classe
@@ -234,6 +218,49 @@ function VerifyClass() {
     }
     
   }
+}
+
+function avancar(){
+
+  if(valorTransform == -480){
+    document.getElementById("avancar").style.filter = "grayscale(70%)"
+    document.getElementById("avancar").style.cursor = "default"
+  }
+
+  if(valorTransform == 0){
+    document.getElementById("regredir").style.filter = "grayscale(0%)"
+    document.getElementById("regredir").style.cursor = "pointer"
+  }
+
+  if(valorTransform == -510){
+  }else{
+  valorTransform -= 30
+  Array.from(divQuestoes).forEach((elementoAtual) => {
+    elementoAtual.style.transform = `translateY(${valorTransform}rem)`;
+  });
+ }
+}
+
+function regredir(){
+  if(valorTransform == -510){
+    document.getElementById("avancar").style.filter = "grayscale(0%)"
+    document.getElementById("avancar").style.cursor = "pointer"
+  }
+
+  if(valorTransform == -30){
+    document.getElementById("regredir").style.filter = "grayscale(70%)"
+    document.getElementById("regredir").style.cursor = "default"
+  }
+
+
+  if(valorTransform == 0){
+  }else{
+  valorTransform += 30
+
+  Array.from(divQuestoes).forEach((elementoAtual) => {
+    elementoAtual.style.transform = `translateY(${valorTransform}rem)`;
+  });
+}
 }
 
 
