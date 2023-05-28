@@ -4,10 +4,10 @@
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+
   user-select: none;
   -webkit-user-drag: none;
-  user-drag: none
+
 }
 
 * {
@@ -180,6 +180,7 @@ bottom: 10px;
     width: 19.5rem;
     max-height: 10rem;
     min-height: 10rem;
+    overflow-y: auto;
 }
 
 .detQuest input{
@@ -203,4 +204,13 @@ bottom: 10px;
 .memoriademassa, .adressbus, .registradores, .i5, .i7, .cache, .eprom, .dualcore, .ula, .threads, .flash, .dma, .databus, .quadcore, .ram, .rom, .cs, .cpu{
 color: #447bbe;
 pointer-events: none;
+position: relative;
+}
+
+.numQuest{
+    position: absolute;
+    top: -20px;
+    left: 38%;
+    color: white;
+    
 }
