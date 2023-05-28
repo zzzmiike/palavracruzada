@@ -1,30 +1,206 @@
-.container{
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #447BBE #DFE9EB;
+  }
+  
+  /* Chrome, Edge and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #DFE9EB;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #DFE9EB;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #447BBE;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #447BBE;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #447BBE;
+  }
+
+
+.containerQuestoes {
+  background-color: #1d2b70
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 12vh;
+  padding-bottom: 1rem;
+}
+
+.cruzadinha {
+  background-color: #2b3fa152;
+  width: 55%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(18, 5fr);
+  grid-template-rows: repeat(18, 5fr);
+  padding: 15px;
+  gap: 8px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+  border: 1px solid black;
+}
+
+.containerPerguntas {
+  width: 20%;
+  height: 50vh;
+  overflow-y: hidden;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.329);
+  background-color: #0f1535;
+}
+
+.letterContainer {
+  background-color: #447bbe;
+  border-radius: 10px;
+  min-height: 3rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.spaceContainer {
+  background-color: #151e4d;
+  border-radius: 10px;
+  min-height: 3rem;
+}
+
+.containerLetter {
+  background-color: aliceblue;
+}
+
+.containeroNumQuestao {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+  z-index: 1;
+}
+.containeroNumQuestao span{
+    position: relative;
+    z-index: 1;
+    overflow-y: hidden;
+}
+
+.containeroNumQuestao::after{
+content: "";
+position: absolute;
+left: 0;
+background-color: #1d2b70;
+height: 5px;
+width: 100%;
+bottom: 10px;
+}
+
+.container-titulo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  font-size: 24px;
+  font-weight: 800;
+  background-color: #0f1535;
+  color: white;
+  position: absolute;
+  width: 100%;
+}
+
+.questoesBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.question {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+  min-height: 30rem;
+  max-height: 30rem;
+  color: white;
+}
+
+/* transform: translateY(21rem) depois pra fazer o efeito de subir */
+
+.detQuest{
     display: flex;
-    width: 100%;
-    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
-.cruzadinha{
-    background-color: black;
-    width: 70%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(25, 4fr);
-    grid-template-rows: repeat(20, 4fr);
-    padding: 5px;
-    gap: 5px;
+
+
+
+.detQuest p{
+    font-size: 1.3rem;
+    letter-spacing: .09rem;
+    width: 19.5rem;
+    max-height: 10rem;
+    min-height: 10rem;
 }
 
-.containerPerguntas{
-    width: 30%;
-    height: 100%;
+.detQuest input{
+    width: 80%;
+    height: 3rem;
+    border-radius: 1rem;
+    border: none;
+    padding-inline: 1rem;
+    color: black;
+    font-size: 1.2rem;
 }
 
-.letterContainer{
-    background-color: gray;
-    border-radius: 10px;
+.detQuest input::placeholder{
+    font-size: 1.1rem;
 }
 
-.containerLetter{
-    background-color: aliceblue;
+.detQuest input:focus{
+    outline: none;
+}
+
+.memoriademassa, .adressbus, .registradores, .i5, .i7, .cache, .eprom, .dualcore, .ula, .threads, .flash, .dma, .databus, .quadcore, .ram, .rom, .cs, .cpu{
+color: #447bbe;
+pointer-events: none;
 }
