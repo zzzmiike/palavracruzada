@@ -151,6 +151,7 @@ var listaClasses = [
   "cpu",
 ];
 
+
 function verificar() {
   var resposta = "";
   var idInput = document.getElementById(`${j}`);
