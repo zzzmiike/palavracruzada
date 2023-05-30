@@ -1,12 +1,12 @@
 var respostas = [
   {
-    pergunta: "O cérebro dos dispositivos ou Unidade Central de Processamento",
+    pergunta: "Unidade que concentra grande parte das funcionalidades de um computador, conhecida tambem como 'cerebro'.",
     resposta: "cpu",
     id: 0,
   },
   {
     pergunta:
-      "É um circuito combinatório responsável pela execução de somas, subtrações e funções lógicas, em um sistema digital.",
+      "É a unidade responsável pela execução de equacoes aritmética, e operacoes logicas de algebra booleana",
     resposta: "ula",
     id: 1,
   },
@@ -23,12 +23,12 @@ var respostas = [
     id: 3,
   },
   {
-    pergunta: "É um tipo de memória que permite apenas a leitura de dados enão a escrita",
+    pergunta: "É um tipo de memória que permite apenas a leitura de dados e não a escrita",
     resposta: "rom",
     id: 4,
   },
   {
-    pergunta: "Uma vez programada, pode ser apagada apenas por exposição a uma forte luz ultravioleta.",
+    pergunta: "é um tipo de chip de memória de computador que mantém seus dados quando a energia é desligada, conhecida por ser nao volatil.",
     resposta: "eprom",
     id: 5,
   },
@@ -48,7 +48,7 @@ var respostas = [
     id: 8,
   },
   {
-    pergunta: "Quando ativo, o componente pode ser endereçado; quando não está, o componente está no chamado modo de espera.",
+    pergunta: "Entrada de controle de muitos circuitos integrados , como chips de memória.",
     resposta: "cs",
     id: 9,
   },
