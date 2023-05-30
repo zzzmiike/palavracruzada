@@ -1,12 +1,12 @@
 var respostas = [
   {
-    pergunta: "Unidade que concentra grande parte das funcionalidades de um computador, conhecida tambem como 'cerebro'.",
+    pergunta: "Que componente é considerado o cérebro de um computador?",
     resposta: "cpu",
     id: 0,
   },
   {
     pergunta:
-      "É a unidade responsável pela execução de equacoes aritmética, e operacoes logicas de algebra booleana",
+      "Que unidade do processador é responsável por realizar operações lógicas e aritméticas?",
     resposta: "ula",
     id: 1,
   },
@@ -18,72 +18,72 @@ var respostas = [
   },
   {
     pergunta:
-      "É responsável pelo armazenamento de informações necessárias para a execução de aplicativos em uso e para o funcionamento do próprio sistema operacional.",
+      "Que tipo de memória é volátil e perde seus dados quando o dispositivo é desligado?",
     resposta: "ram",
     id: 3,
   },
   {
-    pergunta: "É um tipo de memória que permite apenas a leitura de dados e não a escrita",
+    pergunta: "Que tipo de memória permite apenas a leitura de dados e não a escrita?",
     resposta: "rom",
     id: 4,
   },
   {
-    pergunta: "é um tipo de chip de memória de computador que mantém seus dados quando a energia é desligada, conhecida por ser nao volatil.",
+    pergunta: "Que tipo de memória é programável apenas uma vez e requer exposição a uma forte luz ultravioleta para ser apagada?",
     resposta: "eprom",
     id: 5,
   },
   {
-    pergunta: "É encontrada comumente em cartões de memória, Pen-Drives, PDAs e celulares.",
+    pergunta: "Que tipo de memória é conhecida por sua capacidade de retenção de dados mesmo quando não está recebendo energia?",
     resposta: "flash",
     id: 6,
   },
   {
-    pergunta: "Tem como função armazenar grandes quantidades de informações.",
+    pergunta: "Que tipo de memória é comumente utilizado para armazenar dados permanentes em dispositivos eletrônicos, como discos rígidos e SSDs?",
     resposta: "memoria de massa",
     id: 7,
   },
   {
-    pergunta: "É um recurso que capacita os dispositivos de entrada e saída a terem acesso direto à memória RAM, sem sobrecarregar o processador.",
+    pergunta: "Que recurso permite que dispositivos de entrada/saída acessem diretamente a memória RAM, sem sobrecarregar a CPU?",
     resposta: "dma",
     id: 8,
   },
   {
-    pergunta: "Entrada de controle de muitos circuitos integrados , como chips de memória.",
+    pergunta: "Em barramentos de computador, que sinal é usado para selecionar um dispositivo específico para comunicação?",
     resposta: "cs",
     id: 9,
   },
   {
-    pergunta: "É uma arquitetura de barramento de computador usada para troca de dados entre dispositivos que são identificados pelo endereço de hardware da memória física.",
+    pergunta: "Qual é o nome dado à via de comunicação responsável por transmitir endereços de memória?",
     resposta: "adress bus",
     id: 10,
   },
   {
-    pergunta: "É uma estrutura de software para distribuição e para o gerenciamento de dados em tempo real estando em sistemas distribuídos.",
+    pergunta: "Qual é o caminho por onde os dados são transmitidos entre a memória e o processador em um computador?",
     resposta: "data bus",
     id: 11,
   },
   {
-    pergunta: "Processador fabricado pela intel tendo seu primeiro modelo lançado em setembro de 2009 com quatro núcleos, cache L3 de 8MB e frequência de 2,66GHz.",
+    pergunta: "Qual é o nome de uma linha de processadores fabricados pela Intel que teve seu primeiro modelo lançado em setembro de 2009, com quatro núcleos, cache L3 de 8MB e frequência de 2,66GHz?",
     resposta: "i5",
     id: 12,
   },
   {
-    pergunta: "Processador fabricado pela intel teve seu primeiro modelo em meados de 2008, com a microarquitetura Sandy Bridge, possui versões com dois, quatro e seis núcleos de processamento.",
+    pergunta: "Qual é o processador da Intel que foi lançado pela primeira vez em meados de 2008 e possui versões com dois, quatro e seis núcleos de processamento?",
     resposta: "i7",
     id: 13,
   },
   {
-    pergunta: "Significa dois núcleos.",
+    pergunta: "Que termo é usado para descrever um processador que possui dois núcleos de processamento?",
     resposta: "dual core",
     id: 14,
   },
   {
-    pergunta: "Significa quatro núcleos.",
+    pergunta: "Como é chamado um processador que possui quatro núcleos de processamento?",
     resposta: "quad core",
     id: 15,
   },
   {
-    pergunta: "Uma ordem de execução, com instruções encadeadas que são desempenhadas uma por vez.",
+    pergunta: "Que conceito permite que um programa execute várias tarefas independentes ao mesmo tempo?",
     resposta: "threads",
     id: 16,
   },
