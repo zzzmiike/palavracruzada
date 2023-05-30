@@ -213,12 +213,12 @@ position: relative;
 
 
 .cpu .ccpu {
-
   left: -15px;
 }
 
-.ula .numQuest{
-  left: -20px;
+.ula .uula{
+  left: -20px !important;
+  top: 10px !important;
 }
 
 .ram .numQuest{
@@ -230,7 +230,8 @@ position: relative;
 }
 
 .rom .numQuest{
-  left: -20px;
+  left: -20px !important;
+  top: 10px !important;
 }
 
 .eprom .numQuest{
@@ -252,7 +253,7 @@ position: relative;
 }
 
 .cs .ccs{
-  top: -32px;
+  top: -20px;
   left: 10px;
 }
 
@@ -282,7 +283,7 @@ position: relative;
 }
 
 .quadcore .qquad{
-  left: -25px;
+  left: -15px;
 }
 
 .threads .numQuest{
